@@ -29,6 +29,10 @@ html {
     margin-top: 70px;
 
 }
+h1{
+    color: #c22127;
+    text-align: center;
+}
 .bloc-media {
 
     background: rgb(241,166,65);
