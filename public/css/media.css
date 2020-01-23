@@ -41,7 +41,7 @@
     } 
     /*logo*/
     #borderLogo {
-        -moz-transform: scale(0.6);
+        transform: scale(0.6);
         margin-left: -70px;
         margin-top: 10px;
     }
