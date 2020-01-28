@@ -1,7 +1,5 @@
 let zipcode = document.getElementById("adresseC");
 let search = document.getElementById("search");
-let listAdresse = document.querySelectorAll("ul#search > li");
-
 
 zipcode.addEventListener("keyup", function () {
     let code = zipcode.value;
@@ -13,20 +11,20 @@ zipcode.addEventListener("keyup", function () {
             }
         )
         .then(function (json) {
-            json.features.forEach(function (feature) {
+            json
+                .features
+                .forEach(function (feature) {
                     let label = document.createElement("li");
                     label.innerText = feature.properties.label;
+
                     search.appendChild(label)
+                    label.addEventListener("click", function () {
+                        zipcode.value = label.textContent;
+                        search.innerHTML = "";
+                    });
 
                 })
 
         })
-       
-})
-zipcode.addEventListener("blur", function () {
-    search.style.display = "none";    
-})
-search.addEventListener("click", function (e){
-      
-   console.log(listAdress);  
+
 })
