@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="public/css/style.css">
         <!-- permets d'afficher les icons plus vite -->
         <script src='https://kit.fontawesome.com/a076d05399.js' async></script>
+        <script src="public/js/jquery.min.js"></script>
     </head>
     <body>
         <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
@@ -186,7 +187,7 @@
             <main class="pageContact container">
                 
                 <!--post ou get plus pour moyen de recherche-->
-                <form id="myForm" class="contact container" action="traitement.php" method="post">
+                <form id="myForm" class="contact container" action="" method="">
                     <!-- crée une zone de bordure -->
                     <fieldset class="contactHaut row m-3">
                         <!-- nomme la zone -->
@@ -265,8 +266,7 @@
                                 <label class="label col-3" for="courrielC">Email:
                                 </label>
                                 <input
-                                    class="form-control col-8 col-sm-6"
-                                
+                                    class="form-control col-8 col-sm-6"    
                                     type="email"
                                     name="mail"
                                     id="courrielC"
@@ -279,27 +279,27 @@
                                     id="validMail"
                                     title=" ! = mail manquant  X = format incorrect">
                             </p>
-                            <p class="row">
+                            <p class="row apiAdresse">
                                 <label class="label col-3" for="adresseC">Adresse:
                                 </label>
-                                <textarea
+                                <input
                                     class="form-control col-8 col-sm-6"
                                     name="adresse"
                                     id="adresseC"
                                     placeholder=" Votre adresse"
-                                    rows="4"
-                                    cols="40"
+                                    type="text"
                                     required="required"
-                                    onchange="this.value = this.value.charAt(0).toUpperCase() + this.value.substr(1);""></textarea>
+                                    onchange="this.value = this.value.charAt(0).toUpperCase() + this.value.substr(1);"
+                                    autocomplete="off"></input>
                                 <img
                                     
                                     src=""
                                     alt=""
                                     id="validAdresse"
                                     title=" ! = adresse manquante  X = format incorrect">
-
+                                <ul id="search"></ul>
                             </p>
-
+                            
                         </div>
                     </fieldset>
 
@@ -336,7 +336,7 @@
                                 accept=".jpg, .jpeg, .png"
                                 multiple="multiple">
 
-                        </pclass="row">
+                        </p class="row">
                     </fieldset>
 
                     <!--boutons pour envoyer et annuler-->
@@ -347,7 +347,7 @@
                 </form>
 
                 <div class="acces row m-3">
-                    <iframe class="col-7" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.3410572574403!2d-2.7631647843334592!3d47.65837047918812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101e9a7877eaef%3A0x24eb73d362f87e6a!2sMairie%20de%20Vannes!5e0!3m2!1sfr!2sfr!4v1576755392536!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    <!-- <iframe class="col-7" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.3410572574403!2d-2.7631647843334592!3d47.65837047918812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101e9a7877eaef%3A0x24eb73d362f87e6a!2sMairie%20de%20Vannes!5e0!3m2!1sfr!2sfr!4v1576755392536!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe> -->
                     <address class="col-3 m-3">
                         <span class="titreadresse">Jeux de mômes</span><br>
                         Place des Fréres Lumiéres<br>
@@ -461,21 +461,17 @@
             </footer>
         </div>
         
-        <script src="public/js/modal.js"></script>
+        
         <script src="public/js/active.js"></script>
         <script src="public/js/btnTop.js"></script>
         <script src="public/js/contact.js"></script>
         <script src="public/js/connect.js"></script>
-
-
+        <script src="public/js/api.js"></script>
+        <script src="public/js/slack.js"></script>
         <script>menuAct(4); </script>
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script
+        <!--  then Popper.js, then Bootstrap JS -->
             
-            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"defer></script>
         <script
             
             src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"

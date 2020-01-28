@@ -48,10 +48,6 @@
     height: 50px;
     margin: 0 15px;
     border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
 }
 #menu #menuActive {
     background-color: #d38fa5;
@@ -75,10 +71,6 @@
     background-color: #953576;
     color: white;
     border-radius:15px 15px;
-    -webkit-border-radius:15px 15px;
-    -moz-border-radius:15px 15px;
-    -ms-border-radius:15px 15px;
-    -o-border-radius:15px 15px;
 } 
 
 

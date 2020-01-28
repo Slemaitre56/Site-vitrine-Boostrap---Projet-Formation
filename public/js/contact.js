@@ -19,7 +19,7 @@ let mail = document.getElementById("courrielC");
 let regexMail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.com|\.fr$/;
 
 let adresse = document.getElementById("adresseC");
-let regexAdresse = /^[a-zA-Z0-9._-]+[a-z0-9._-]{2,}/;
+let regexAdresse = /^([0-9a-z'àâéèêôùûçÀÂÉÈÔÙÛÇ\s-]{1,50})$/;
 
 let texta = document.getElementById("messageC");
 let regexTexta = /^[a-zA-Z0-9._-]+[a-z0-9._-]{2,}/;
@@ -38,7 +38,6 @@ function validateAll(event) {
     
    
  }; 
-
 function validate(val, validVal, wrapper, event) {
     if (val.validity.valueMissing) { 
         event.preventDefault(); 
@@ -49,6 +48,59 @@ function validate(val, validVal, wrapper, event) {
         wrapper.src = "public/pictos/wrong.png"; 
  
     } else { 
+        event.preventDefault();
         wrapper.src = "public/pictos/ok.png"; 
     } 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let nameValid = /^([a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})?$/;
+
+// let prenommod = document.getElementById("prenomM");
+// let prenommodValid = /^([a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})+([-'\s][a-zA-ZéèîïÉÈÎÏ][a-zéèêàçîï]{2,})?$/;
+
+// let mailM = document.getElementById("mailM");
+// let regexMailM = /[a-zA-Z0-9._-]{3,}@[a-zA-Z0-9._-]{2,}(\.fr|\.com)$/;
+
+// let passwordM = document.getElementById("pwdM");
+// let regexPwdM = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*\.])(?=.{8,})/;
+
+// modal.addEventListener('click', valModalAll)
+
+
+// function valModalAll(event) {
+//     valid(namemod, nameValid, modName, event);  
+//     valid(prenommod, prenommodValid, modSurname, event);
+//     valid(mailM , regexMailM, modMail, event);
+//     valid(passwordM, regexPwdM, modPassword, event);
+    
+//  };
+
+
+// function valid(val, validVal, wrapper, event) {
+//     if (val.validity.valueMissing) { 
+//         event.preventDefault(); 
+//         wrapper.innerHTML="&#xf12a";
+ 
+//     } else if (validVal.test(val.value) == false) { 
+//         event.preventDefault(); 
+//         wrapper.innerHTML="&#xf00d";
+
+//     } else { 
+//         wrapper.innerHTML="&#xf00c";
+//     } 
+// }
+
+            
