@@ -19,7 +19,7 @@ let mail = document.getElementById("courrielC");
 let regexMail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.com|\.fr$/;
 
 let adresse = document.getElementById("adresseC");
-let regexAdresse = /^([0-9a-z'àâéèêôùûçÀÂÉÈÔÙÛÇ\s-]{1,50})$/;
+let regexAdresse = /^([0-9A-Za-z'àâéèêôùûçÀÂÉÈÔÙÛÇ\s-]{1,50})$/;
 
 let texta = document.getElementById("messageC");
 let regexTexta = /^[a-zA-Z0-9._-]+[a-z0-9._-]{2,}/;
