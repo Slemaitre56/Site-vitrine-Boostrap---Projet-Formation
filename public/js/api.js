@@ -27,9 +27,8 @@ $("#adresseC").keyup(function () {
                         code.val(label.textContent);    
                     });
 
-                    $(label).on("blur" ,function () {                      
-                        // au click sur un li il apparait dans le champ                   
-                            $(label).hide();    
+                    $("#myForm").click(function () {                                      
+                            $(label).toggle();    
                         });
 
                     $("#search").append(label);
