@@ -23,15 +23,17 @@ $("#adresseC").keyup(function () {
                     // les li sont implanté dans mon ul    
                     
                     $(label).on("click" ,function () {                      
-                    // au click sur un li il apparait dans le champ
-                    // console.log(label.val());
-                     console.log(this);
-                     
-                        code.val(label.textContent); 
-                        // efface ul quand je vide le champs
-                        // $("#adresseC").empty();
+                    // au click sur un li il apparait dans le champ                   
+                        code.val(label.textContent);    
                     });
+
+                    $(label).on("blur" ,function () {                      
+                        // au click sur un li il apparait dans le champ                   
+                            $(label).hide();    
+                        });
+
                     $("#search").append(label);
+
                 })
         })
 })
