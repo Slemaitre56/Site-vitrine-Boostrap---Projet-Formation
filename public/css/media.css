@@ -38,10 +38,10 @@
         position: absolute;
         right: 150px;
         bottom: -100px;
-    } 
+    }
     /*logo*/
     #borderLogo {
-        -moz-transform: scale(0.6);
+        transform: scale(0.6);
         margin-left: -70px;
         margin-top: 10px;
     }
@@ -69,14 +69,14 @@
 }
 @media screen and (max-width:992px) {
     #borderLogo {
-        -moz-transform: scale(0.8);
+        transform: scale(0.8);
         margin-left: -40px;
     }
-    .contact{
+    .contact {
         width: 95%;
-margin: 0 auto;
+        margin: 0 auto;
     }
-    #blocLiens h3{
-            font-size: 1.4rem;
+    #blocLiens h3 {
+        font-size: 1.4rem;
     }
 }

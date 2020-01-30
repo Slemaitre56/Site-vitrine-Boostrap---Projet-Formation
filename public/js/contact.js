@@ -19,7 +19,7 @@ let mail = document.getElementById("courrielC");
 let regexMail = /^[a-zA-Z0-9._-]+@[a-z0-9._-]{2,}\.com|\.fr$/;
 
 let adresse = document.getElementById("adresseC");
-let regexAdresse = /^[a-zA-Z0-9._-]+[a-z0-9._-]{2,}/;
+let regexAdresse = /^([0-9A-Za-z'àâéèêôùûçÀÂÉÈÔÙÛÇ\s-]{1,50})$/;
 
 let texta = document.getElementById("messageC");
 let regexTexta = /^[a-zA-Z0-9._-]+[a-z0-9._-]{2,}/;
@@ -36,7 +36,6 @@ function validateAll(event) {
     validate(adresse, regexAdresse, okAdresse , event);
     validate(texta, regexTexta, okText, event); 
  }; 
-
 function validate(val, validVal, wrapper, event) {
     if (val.validity.valueMissing) { 
         event.preventDefault(); 
@@ -47,6 +46,7 @@ function validate(val, validVal, wrapper, event) {
         wrapper.src = "public/pictos/wrong.png"; 
  
     } else { 
+        event.preventDefault();
         wrapper.src = "public/pictos/ok.png"; 
     } 
 }
@@ -62,3 +62,4 @@ function eraseAll() {
     });
       
 }
+

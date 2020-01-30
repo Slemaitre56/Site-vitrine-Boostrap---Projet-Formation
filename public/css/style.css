@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-  }
+}
 
 #myBtn {
     display: none;
@@ -20,16 +20,18 @@ html {
     height: 50px;
     border-radius: 25px;
     font-weight: bold;
-    
+
 }
 .bloc {
     width: 100%;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
     margin-top: 70px;
 
 }
-h1{
+h1 {
     color: #c22127;
     text-align: center;
 }
@@ -37,15 +39,12 @@ h1{
 
     background: rgb(241,166,65);
     background: radial-gradient(circle, rgba(241,166,65,1) 0%, rgba(211,143,165,1) 65%);
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
     border-radius: 20px 20px;
-    -webkit-border-radius: 20px 20px;
-    -moz-border-radius: 20px 20px;
-    -ms-border-radius: 20px 20px;
-    -o-border-radius: 20px 20px;
 }
 .bloc-media h2 {
     text-align: center;
@@ -58,34 +57,22 @@ h1{
     padding: 30px 0;
     min-height: 480px;
 }
-.bloc .bloc-media .news-videos .video a img{
+.bloc .bloc-media .news-videos .video a img {
     width: 98%;
     height: 285px;
-    -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
 .bloc .bloc-media .news-videos .video:hover a img {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
 }
 .bloc .bloc-media .news-videos .photo img {
     width: 100%;
-    -webkit-transform: scale(1);
     transform: scale(1);
-    -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
 }
 .bloc .bloc-media .news-videos .photo:hover img {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
 }
 .bloc .bloc-media .news-videos .sous-text p {
     text-align: justify;
@@ -122,7 +109,8 @@ h1{
     text-align: center;
     color: white;
 }
-.btnLogin,.btncancel {
+.btnLogin,
+.btncancel {
     background: rgba(241, 166, 65, 0.71);
     color: white;
     font-size: 1.1rem;
@@ -161,10 +149,7 @@ h1{
     background: linear-gradient(rgb(243, 193, 128), rgba(241,166,65,1), rgba(211,143,165,1) 65%, rgba(211, 143, 164, 0.685));
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 0 3px rgba(0,0,0, 0.2);
-    -webkit-border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -ms-border-radius: 10px 10px 10px 10px;
-    -o-border-radius: 10px 10px 10px 10px;
+
 }
 
 /*css avancé*/
@@ -185,19 +170,11 @@ h1{
 .border-slider:before {
     left: 0;
     transform: rotate(-2.5deg);
-    -webkit-transform: rotate(-2.5deg);
-    -moz-transform: rotate(-2.5deg);
-    -ms-transform: rotate(-2.5deg);
-    -o-transform: rotate(-2.5deg);
 }
 /*ombre du côté droit penché*/
 .border-slider:after {
     right: 0;
     transform: rotate(2.5deg);
-    -webkit-transform: rotate(2.5deg);
-    -moz-transform: rotate(2.5deg);
-    -ms-transform: rotate(2.5deg);
-    -o-transform: rotate(2.5deg);
 }
 
 #wrapper img {
@@ -262,10 +239,6 @@ h1{
     background: rgb(241,166,65);
     background: radial-gradient(circle, rgba(241,166,65,1) 0%, rgba(211,143,165,1) 65%);
     border-radius: 20px 20px;
-    -webkit-border-radius: 20px 20px;
-    -moz-border-radius: 20px 20px;
-    -ms-border-radius: 20px 20px;
-    -o-border-radius: 20px 20px;
     color: white;
 }
 .contact img {
@@ -291,6 +264,27 @@ h1{
 }
 .acces .adresse {
     color: #444444;
+}
+
+.apiAdresse {
+    position: relative;
+}
+#search {
+    position: absolute;
+    top: 136px;
+    left: 131px;
+    z-index: 9;
+    background: white;
+    color: #444444;
+    width: 50%;
+}
+#search li {
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#search li:hover {
+    background: #f1d6d6;
 }
 /*cookie*/
 #cookie-bar {
