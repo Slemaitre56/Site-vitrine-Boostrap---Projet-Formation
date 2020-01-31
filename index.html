@@ -44,15 +44,13 @@
                             type="email"
                             placeholder="Mail"
                             id="mailConnection"
-                            required
-                            >
+                            required="required">
                         <input
                             class="connect form-control mr-sm-2 border border-warning btn-sm"
                             type="password"
                             placeholder="Mot de passe"
                             id="pwdConnection"
-                            required
-                            >
+                            required="required">
                         <button
                             id="login"
                             class="btn btn-outline-warning font-weight-bold mr-3"
@@ -121,7 +119,9 @@
                                         <input
                                             type="email"
                                             class="col-8 form-control"
-                                            id="mailM" name="email" required/>
+                                            id="mailM"
+                                            name="email"
+                                            required="required"/>
                                         <i
                                             id="mod2"
                                             style='font-size:24px'
@@ -136,7 +136,8 @@
                                             type="password"
                                             class=" col-8 form-control"
                                             id="pwdM"
-                                            name="password" required/>
+                                            name="password"
+                                            required="required"/>
                                         <i
                                             id="mod3"
                                             style='font-size:24px'
@@ -189,7 +190,10 @@
                         <!-- liens -->
                         <div id="collapsibleNavbar" class="burger collapse navbar-collapse ">
 
-                            <ul id="menuActive" class="navmenu navbar-nav justify-content-center" role="tablist">
+                            <ul
+                                id="menuActive"
+                                class="navmenu navbar-nav justify-content-center"
+                                role="tablist">
                                 <li class="nav-item main-nav">
 
                                     <a class="nav-link font-weight-bold text-white " href="index.html"><img src="public/pictos/bear.png" alt="icon ours">Accueil</a>
@@ -233,14 +237,14 @@
                         </div>
 
                     </section>
-
+                    <h1>Les dernières actualitées</h1>
                     <section class="bloc row justify-content-around">
                         <article class="bloc-media col-10 col-lg-5">
 
                             <h2>Nouvelles Videos</h2>
                             <div class="news-videos">
                                 <figure class="video">
-                                    <a href="https://www.youtube.com/watch?v=6knkj6TqnuE" ><img src="public/images/imageYoutube.png" alt="youtube"></a>
+                                    <a href="https://www.youtube.com/watch?v=6knkj6TqnuE"><img src="public/images/imageYoutube.png" alt="youtube"></a>
                                 </figure>
                                 <div class="sous-text">
                                     <h3>18 jouets à fabriquer avec ses enfants</h3>
@@ -256,7 +260,7 @@
 
                             <div class="news-videos">
                                 <figure class="video">
-                                    <a href="https://www.youtube.com/watch?v=6arfJPzcVWg&t=5s" ><img src="public/images/imageYoutube2.png" alt="youtube"></a>
+                                    <a href="https://www.youtube.com/watch?v=6arfJPzcVWg&t=5s"><img src="public/images/imageYoutube2.png" alt="youtube"></a>
                                 </figure>
                                 <div class="sous-text">
                                     <h3>12 bricolages en papiers</h3>
@@ -425,24 +429,26 @@
             <script src="public/js/connect.js"></script>
 
             <!-- menu active -->
-            <script>menuAct(0); </script>
+            <script>
+                menuAct(0);
+            </script>
 
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
             <script
-               
                 src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
                 integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-                crossorigin="anonymous" defer="defer"></script>
+                crossorigin="anonymous"
+                defer="defer"></script>
             <script
-                
                 src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
                 integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-                crossorigin="anonymous"defer="defer"></script>
+                crossorigin="anonymous"
+                defer="defer"></script>
             <script
-                
                 src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
                 integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-                crossorigin="anonymous"defer="defer"></script>
-                
+                crossorigin="anonymous"
+                defer="defer"></script>
+
         </body>
     </html>
