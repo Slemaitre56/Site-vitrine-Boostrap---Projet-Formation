@@ -36,9 +36,7 @@ function validateAll(event) {
     validate(mobile, regexTel, okMobile, event);
     validate(mail, regexMail, okMail, event);
     validate(adresse, regexAdresse, okAdresse , event);
-    validate(texta, regexTexta, okText, event);
-    
-   
+    validate(texta, regexTexta, okText, event); 
  }; 
 function validate(val, validVal, wrapper, event) {
     if (val.validity.valueMissing) { 
@@ -56,3 +54,16 @@ function validate(val, validVal, wrapper, event) {
 
     } 
 }
+
+let reset = document.getElementById("reset");
+let tabs = document.querySelectorAll(".reset");
+
+reset.addEventListener('click', eraseAll);
+
+function eraseAll() {
+    tabs.forEach(function(tab){
+        tab.style.display = "none";
+    });
+      
+}
+
