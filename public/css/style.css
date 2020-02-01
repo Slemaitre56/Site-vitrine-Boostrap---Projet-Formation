@@ -1,7 +1,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 #myBtn {
     display: none;
     position: fixed;
@@ -24,9 +23,7 @@ html {
 }
 .bloc {
     width: 100%;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: justify;
     justify-content: space-between;
     margin-top: 70px;
 
@@ -39,7 +36,6 @@ h1 {
 
     background: rgb(241,166,65);
     background: radial-gradient(circle, rgba(241,166,65,1) 0%, rgba(211,143,165,1) 65%);
-    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -89,7 +85,6 @@ h1 {
 .bloc .bloc-media .news-videos .sous-text .date .jour {
     font-size: 1.2rem;
 }
-
 .mention {
     padding: 10px;
     color: rgb(89, 85, 85);
@@ -98,7 +93,6 @@ h1 {
     text-decoration: none;
     color: rgb(89, 85, 85);
 }
-
 /*login modal*/
 #titre {
     background: rgba(241, 166, 65, 0.71);
@@ -120,7 +114,6 @@ h1 {
     text-decoration: none;
     color: #c22127;
 }
-
 /*a propos*/
 #principal {
     margin-top: 350px;
@@ -149,9 +142,7 @@ h1 {
     background: linear-gradient(rgb(243, 193, 128), rgba(241,166,65,1), rgba(211,143,165,1) 65%, rgba(211, 143, 164, 0.685));
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 0 3px rgba(0,0,0, 0.2);
-
 }
-
 /*css avancé*/
 /* crée un ombre derrière le slider*/
 .border-slider:after,
@@ -206,15 +197,12 @@ h1 {
 .pageContact {
     margin: 400px auto 0;
 }
-
-.pageContact h2 {
+.pageContact h1 {
     text-align: center;
     color: #c22127;
     font-weight: bold;
-
 }
-
-.pageContact h3 {
+.pageContact h2 {
     font-weight: bold;
     border-left: 2px solid white;
     border-bottom: 2px solid white;
@@ -222,7 +210,6 @@ h1 {
     padding: 10px;
     width: 100%;
     color: #c22127;
-
 }
 .pageContact .colonne .petit {
     margin-right: 50px;
@@ -234,7 +221,6 @@ h1 {
 #valid4 {
     vertical-align: top;
 }
-
 .pageContact .contact {
     background: rgb(241,166,65);
     background: radial-gradient(circle, rgba(241,166,65,1) 0%, rgba(211,143,165,1) 65%);
@@ -257,7 +243,6 @@ h1 {
     background-color: white;
     border: none;
 }
-
 .acces .titreadresse {
     color: #eea844;
     font-weight: bold;
@@ -265,7 +250,6 @@ h1 {
 .acces .adresse {
     color: #444444;
 }
-
 .apiAdresse {
     position: relative;
 }
@@ -288,7 +272,6 @@ h1 {
 }
 /*cookie*/
 #cookie-bar {
-
     z-index: 10;
     position: fixed;
     bottom: 0;
@@ -301,7 +284,6 @@ h1 {
     color: #5a5757;
     font: 14px arial, sans-serif;
     opacity: 0.9;
-
 }
 .cookie {
     display: inline-block;
@@ -321,13 +303,11 @@ h1 {
     background: rgb(241, 198, 159);
     font-weight: bold;
     color: #5b5757;
-
 }
 #agree:hover,
 #stop-cookie:hover {
     text-decoration: underline;
 }
-
 .validCookie {
     width: 20%;
 }
