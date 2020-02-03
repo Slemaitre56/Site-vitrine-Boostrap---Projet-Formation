@@ -27,7 +27,7 @@ $("#adresseC").keyup(function () {
                         code.val(label.textContent);    
                     });
 
-                    $("#myForm").click(function () {                                      
+                    $(".contactHaut").click(function () {                                      
                             $(label).toggle();    
                         });
 

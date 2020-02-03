@@ -1,5 +1,5 @@
 
-    // $("#submit").click(function () {
+    $("#submit").click(function () {
         
         var token = creds.token;
         
@@ -21,5 +21,5 @@
             }
         });
 
-    // })
+    })
 
