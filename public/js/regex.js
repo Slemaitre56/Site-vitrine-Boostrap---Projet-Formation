@@ -35,8 +35,8 @@ let regexAdresse = /^([0-9A-Za-z'àâéèêôùûçÀÂÉÈÔÙÛÇ\s-]{1,50})$/
 
 
 // modal
-let modal = document.getElementById("envoyer");
-modal.addEventListener('click', valModalAll)
+
+
 
 
 function valModalAll(event) {
