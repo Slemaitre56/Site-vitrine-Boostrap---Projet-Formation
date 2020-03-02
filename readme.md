@@ -50,11 +50,11 @@ Aucune
 
 ### CONTRIBUTION : 
 
-Ensemble de la classe Kercode 4
+* Ensemble de la classe Kercode 4
 
-### CODECLIMATE
+* dbiron
 
-![alt text](public/images/codeclimate.png "note code climate")
+
 
 
 
