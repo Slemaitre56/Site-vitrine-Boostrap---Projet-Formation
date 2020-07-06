@@ -31,29 +31,27 @@
         <div class="container-fluid">
             <header id="top" class="container-fluid-sm">
                  <!-- barre connection -->
-                 <div
-                 id="connect"
-                 class="navbar navbar-expand-sm justify-content-end .fixed-top">
-                 <form class=" connexion form-inline " action="/action_page.php">
-                     <input
-                         class="connect form-control mr-sm-2 border border-warning btn-sm"
-                         type="email"
-                         placeholder="Mail"
-                         id="mailConnection"
-                         required
-                         >
-                     <input
-                         class="connect form-control mr-sm-2 border border-warning btn-sm"
-                         type="password"
-                         placeholder="Mot de passe"
-                         id="pwdConnection"
-                         required
-                         >
-                     <button
-                         id="login"
-                         class="btn btn-outline-warning font-weight-bold mr-3"
-                         type="submit">Se connecter</button>
-                 </form>
+                                 <div
+                    id="connect"
+                    class="navbar navbar-expand-sm justify-content-end .fixed-top">
+                    <form class="connexion form-inline " action="/action_page.php">
+                        <input
+                            class="connect form-control "
+                            type="email"
+                            placeholder="Mail"
+                            id="mailConnection"
+                            required="required">
+                        <input
+                            class="connect form-control"
+                            type="password"
+                            placeholder="Mot de passe"
+                            id="pwdConnection"
+                            required="required">
+                        <button
+                            id="login"
+                            class="btn btn-outline-light font-weight-bold mr-3"
+                            type="submit">Se connecter</button>
+                    </form>
                     <!-- modal button -->
                     <button
                         type="button"
@@ -173,7 +171,7 @@
                             id="logo">
                     </figure>
                     <!-- menuprincipal -->
-                    <nav id="menu" class="navbar navbar-expand-md navbar-light">
+                    <nav id="menu" class="navbar navbar-expand-lgnavbar-light">
 
                         <button
                             class=" menuBurger navbar-toggler"
@@ -215,9 +213,9 @@
 
             <main id="principal" class="page container ">
                 
-                <div class="bloc row m-5 ">
-                    <h2 class="titrepage col-10 col-sm-12 m-4">A propos</h2>
-                    <figure class="trio col-10 col-sm-12 m-4">
+                <div class="bloc row">
+                    <h1 class="titrepage col-10 col-sm-12">A propos</h1>
+                    <figure class="trio col-10 col-sm-12">
                         <img class="col-3 " src="public/images/crayons.jpg" alt="image"/>
                         <img class="col-3" src="public/images/child.jpg" alt="image"/>
                         <img class="col-3" src=" public/images/kaleidoscope.jpg" alt="image"/>
@@ -296,7 +294,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class=" liens col-6 col-sm-3">
+                        <div class=" liens col-6 col-sm-6 col-lg-3">
                             <h3>Nos idées boutiques</h3>
                             <div class=" logo col-12 justify-content-center ">
                                 <a href="https://www.oxybul.com/"><img src="public/images/oxy.png" class="rounded-circle" alt="logo oxybul"></a>
@@ -312,7 +310,7 @@
                                     alt="logo petit bateau"></a>
                             </div>
                         </div>
-                        <div class=" liens col-6 col-sm-3">
+                        <div class=" liens col-6 col-sm-6 col-lg-3">
                             <h3>Nos réseaux sociaux</h3>
                             <div class="logo col-12">
                                 <a href="https://www.facebook.com/"><img src="public/pictos/picto-facebook.png" alt="facebook"></a>
@@ -347,8 +345,7 @@
 
             </footer>
         </div>
-        <script src="public/js/connect.js"></script>
-        <script src="public/js/contact.js"></script>
+        <script src="public/js/regex.js"></script>
         <script src="public/js/active.js"></script>
         <script src="public/js/btnTop.js"></script>
         

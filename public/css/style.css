@@ -1,7 +1,6 @@
 html {
     scroll-behavior: smooth;
 }
-
 #myBtn {
     display: none;
     position: fixed;
@@ -24,22 +23,19 @@ html {
 }
 .bloc {
     width: 100%;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: justify;
     justify-content: space-between;
-    margin-top: 70px;
+    margin: auto;
+    border: 2px solid #a29393;
+    border-radius: 5px;
 
 }
 h1 {
-    color: #c22127;
+    color: #a29393;
     text-align: center;
+    padding: 35px;
 }
 .bloc-media {
-
-    background: rgb(241,166,65);
-    background: radial-gradient(circle, rgba(241,166,65,1) 0%, rgba(211,143,165,1) 65%);
-    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -48,8 +44,7 @@ h1 {
 }
 .bloc-media h2 {
     text-align: center;
-    color: #c22127;
-    font-weight: bold;
+    color: #a29393;
     margin-top: 20px;
 }
 .bloc .bloc-media .news-videos {
@@ -77,19 +72,21 @@ h1 {
 .bloc .bloc-media .news-videos .sous-text p {
     text-align: justify;
     font-size: 1.1rem;
+    color: #776e6e;
 }
 .bloc .bloc-media .news-videos .sous-text h3 {
-    color: #c22127;
+    color: #e19552;
     margin: 5px 0;
+    font-size: 1.3rem;
 }
 .bloc .bloc-media .news-videos .sous-text .date {
-    color: #444444;
+    color: #a29393;
     margin-bottom: 5px;
+    font-size: 0.8rem;
 }
 .bloc .bloc-media .news-videos .sous-text .date .jour {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
-
 .mention {
     padding: 10px;
     color: rgb(89, 85, 85);
@@ -98,12 +95,10 @@ h1 {
     text-decoration: none;
     color: rgb(89, 85, 85);
 }
-
 /*login modal*/
 #titre {
     background: rgba(241, 166, 65, 0.71);
     color: white;
-    font-weight: bold;
 }
 #titre h4 {
     text-align: center;
@@ -118,17 +113,15 @@ h1 {
 .forget {
     padding-right: 200px;
     text-decoration: none;
-    color: #c22127;
+    color: #a29393;
 }
-
 /*a propos*/
 #principal {
     margin-top: 350px;
 }
 #principal .bloc .titrepage {
     text-align: center;
-    color: #c22127;
-    font-weight: bold;
+    color: #a29393;
 }
 #principal .bloc .trio {
     text-align: center;
@@ -142,16 +135,12 @@ h1 {
     width: 100%;
     min-height: 500px;
     padding: 15px;
-    margin: 400px auto 2em;
-    border: 1px solid #ddd;
+    margin: 300px auto 2em;
+    border: 2px solid #ddd;
     background: #FFF;
     /*CSS3effects*/
-    background: linear-gradient(rgb(243, 193, 128), rgba(241,166,65,1), rgba(211,143,165,1) 65%, rgba(211, 143, 164, 0.685));
-    border-radius: 10px 10px 10px 10px;
     box-shadow: 0 0 3px rgba(0,0,0, 0.2);
-
 }
-
 /*css avancé*/
 /* crée un ombre derrière le slider*/
 .border-slider:after,
@@ -190,10 +179,9 @@ h1 {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background-color: #eea844;
     font-size: 1.1rem;
     font-weight: bold;
-    color: white;
+    color:#eea844;
     box-shadow: 0 0 3px rgba(0,0,0, 0.7);
 }
 #left-arrow {
@@ -204,25 +192,19 @@ h1 {
 }
 /*contact*/
 .pageContact {
-    margin: 400px auto 0;
+    margin: 300px auto 0;
 }
-
-.pageContact h2 {
+.pageContact h1 {
     text-align: center;
-    color: #c22127;
-    font-weight: bold;
-
+    color: #a29393;
 }
-
-.pageContact h3 {
-    font-weight: bold;
+.pageContact h2 {
     border-left: 2px solid white;
     border-bottom: 2px solid white;
     margin: 20px 0;
     padding: 10px;
     width: 100%;
-    color: #c22127;
-
+    color: #e19552;
 }
 .pageContact .colonne .petit {
     margin-right: 50px;
@@ -234,12 +216,10 @@ h1 {
 #valid4 {
     vertical-align: top;
 }
-
 .pageContact .contact {
-    background: rgb(241,166,65);
-    background: radial-gradient(circle, rgba(241,166,65,1) 0%, rgba(211,143,165,1) 65%);
+    border: 2px solid #a29393;
     border-radius: 20px 20px;
-    color: white;
+    color: #5a5757;
 }
 .contact img {
     max-height: 40px;
@@ -257,7 +237,6 @@ h1 {
     background-color: white;
     border: none;
 }
-
 .acces .titreadresse {
     color: #eea844;
     font-weight: bold;
@@ -265,7 +244,6 @@ h1 {
 .acces .adresse {
     color: #444444;
 }
-
 .apiAdresse {
     position: relative;
 }
@@ -288,7 +266,6 @@ h1 {
 }
 /*cookie*/
 #cookie-bar {
-
     z-index: 10;
     position: fixed;
     bottom: 0;
@@ -301,7 +278,6 @@ h1 {
     color: #5a5757;
     font: 14px arial, sans-serif;
     opacity: 0.9;
-
 }
 .cookie {
     display: inline-block;
@@ -321,13 +297,11 @@ h1 {
     background: rgb(241, 198, 159);
     font-weight: bold;
     color: #5b5757;
-
 }
 #agree:hover,
 #stop-cookie:hover {
     text-decoration: underline;
 }
-
 .validCookie {
     width: 20%;
 }

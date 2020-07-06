@@ -1,30 +1,40 @@
-let zipcode = document.getElementById("adresseC");
-let search = document.getElementById("search");
+$(document).ready(function(){
 
-zipcode.addEventListener("keyup", function () {
-    let code = zipcode.value;
-    search.innerHTML = "";
-    fetch("https://api-adresse.data.gouv.fr/search/?q=" + code)
-        .then(
-            function (response) {
+$("#adresseC").keyup(function () {
+    // quand je relache une touche du clavier
+    let code = $("#adresseC");
+    // je recupere la valeur du champ de saisie
+    $("#search").empty();
+    // j'efface le contenu à chaque fois pour eviter l'accumulation des li
+    fetch("https://api-adresse.data.gouv.fr/search/?q=" + code.val())
+    // api = adresse url = recupere des données
+        .then(function (response) {
+            // transforme ses données en json = js + objet
                 return response.json();
             }
         )
         .then(function (json) {
-            json
-                .features
-                .forEach(function (feature) {
+            // je suis le chemin pt par pt pour recuperer la donnée que je veux
+            json.features.forEach(function (feature) {
+                // pour chaque adresse je crée un li
                     let label = document.createElement("li");
-                    label.innerText = feature.properties.label;
-
-                    search.appendChild(label)
-                    label.addEventListener("click", function () {
-                        zipcode.value = label.textContent;
-                        search.innerHTML = "";
+                    // j'implante mes adresses dans mes li
+                    label.innerText = feature.properties.label;   
+                    // les li sont implanté dans mon ul    
+                    
+                    $(label).on("click" ,function () {                      
+                    // au click sur un li il apparait dans le champ                   
+                        code.val(label.textContent);    
                     });
 
+                    $(".contactHaut").click(function () {                                      
+                            $(label).toggle();    
+                        });
+
+                    $("#search").append(label);
+
                 })
-
         })
-
 })
+});
+
