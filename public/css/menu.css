@@ -1,13 +1,15 @@
 * {
-    margin: 0;
     padding: 0;
     font-size: 16px;  
 }
 
 .container-fluid {
-    margin: 0;
     padding: 0;
     
+}
+.row{
+    margin: 0;
+
 }
 .container-fluid #borderLogo {
     border: 3px solid #eea844;
@@ -55,7 +57,8 @@
     min-height: 60px;
     padding: 5px;
     border-bottom: 3px solid #eea844;
-    border-left: 1px solid #eea844;;
+    border-left: 1px solid #eea844;
+    
 }
 #menu .nav-link img {
     margin: 5px 10px;
