@@ -1,17 +1,29 @@
-var mybutton = document.getElementById("myBtn");
+/*
+                                | -------------------------------BOUTON VERS LE HAUT------------------------------- | 
+                                |                                                                                   |                                                           
+                                |-----------------------------------------------------------------------------------|
+*/
 
-// When the user scrolls down 80px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
+
+let mybutton = document.getElementById("myBtn");
+
+// Le bouton "retour vers le haut" apparaît à la fonction scrollFunction
+window.onscroll = function() {
+  scrollFunction()
+};
+
+// Quand on descend sur la page/element a 150 vers le bas alors on fait apparaitre le bouton "retour vers le haut"
 function scrollFunction() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
     mybutton.style.display = "block";
+    // sinon il est désactivé
   } else {
     mybutton.style.display = "none";
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Quand je clique sur le bouton je retourne en haut de la page
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
